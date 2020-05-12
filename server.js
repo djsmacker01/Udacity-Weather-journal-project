@@ -3,6 +3,7 @@ projectData = {};
 
 // Require Express to run server and routes
 const express = require('express');
+const bodyParser = require('body-parser');
 // Start up an instance of app
 const app = express();
 /* Middleware*/
@@ -11,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //body parser
-const bodyParser = require('body-parser');
+
 const fetch = require('node-fetch');
 // Cors for cross origin allowance
 const cors = require('cors');
